@@ -7,7 +7,7 @@ const app = express();
 app.use(
   '/graphql',
   graphqlHTTP({
-    schema: schema, // Pass the schema here
+    schema, // Pass the schema here
     graphiql: true, // Enables GraphQL UI
   })
 );
