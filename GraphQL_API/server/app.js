@@ -8,7 +8,7 @@ app.use(
   '/graphql',
   graphqlHTTP({
     schema, // Pass the schema here
-    graphiql: true, // Enables GraphQL UI
+    graphiql: true, // Enables GraphiQL UI
   })
 );
 
