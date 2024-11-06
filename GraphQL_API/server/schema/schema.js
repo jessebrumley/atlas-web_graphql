@@ -100,6 +100,18 @@ const RootQuery = new GraphQLObjectType({
         return _.find(projects, { id: args.id });
       },
     },
+    tasks: {
+      type: new GraphQLList(TaskType),
+      resolve() {
+        return tasks;
+      },
+    },
+    projects: {
+      type: new GraphQLList(ProjectType),
+      resolve() {
+        return projects;
+      },
+    },
   },
 });
 
