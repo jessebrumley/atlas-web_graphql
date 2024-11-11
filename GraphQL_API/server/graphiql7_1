@@ -1,0 +1,19 @@
+mutation {
+  addProject(title: "Bootstrap", weight: 1, description: "Bootstrap is a free and open source CSS framework direct at responsive, mobile-first front-end web development.") {
+    title
+    weight
+    description
+  }
+}
+
+----------------
+id needs to be obtained to pass the id to the task creation in graphiql7_2
+----------------
+mutation {
+  addProject(title: "Bootstrap", weight: 1, description: "Bootstrap is a free and open source CSS framework direct at responsive, mobile-first front-end web development.") {
+    id
+    title
+    weight
+    description
+  }
+}
